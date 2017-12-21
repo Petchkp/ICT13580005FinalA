@@ -19,6 +19,9 @@ namespace ICT13580005FinalA.Models
 		[MaxLength(2)]
         public string Age{get;set;}
 
+        [MaxLength(6)]
+        public string gender { get; set; }
+
 		[NotNull]
 		[MaxLength(100)]
         public string Departmant{get;set;}

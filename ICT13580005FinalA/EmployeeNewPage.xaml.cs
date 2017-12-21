@@ -51,13 +51,16 @@ namespace ICT13580005FinalA
                     employee.Name = nameEntry.Text;
                     employee.Lastname = lastnameEntry.Text;
                     employee.Age = ageEntry.Text;
+                    employee.gender = genderPicker.SelectedItem.ToString();
+                    employee.Departmant = depaetmentPicker.SelectedItem.ToString();
+                    employee.Phone = phoneEntry.Text;
                 }
             }
         }
 
         void CancelButtun_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PopModalAsync();
         }
 
         void CSlider_ValueChanged(object sender, ValueChangedEventArgs e)
