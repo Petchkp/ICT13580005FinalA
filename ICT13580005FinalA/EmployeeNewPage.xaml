@@ -107,7 +107,8 @@
                 TextColor="Blue"
                 Margin="0,10,0,0" />
             <Switch
-                IsToggled="false" />
+                IsToggled="false"
+                x:Name="marrySwitch"/>
             <Label
                 Text="จำนวนบุตร"
                 FontSize="14"

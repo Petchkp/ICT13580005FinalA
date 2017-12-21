@@ -54,8 +54,16 @@ namespace ICT13580005FinalA
                     employee.gender = genderPicker.SelectedItem.ToString();
                     employee.Departmant = depaetmentPicker.SelectedItem.ToString();
                     employee.Phone = phoneEntry.Text;
+                    employee.Mail = mailEntry.Text;
+                    employee.Address = addressEntry.Text;
+                    employee.Marry = marrySwitch.ToString();
+                    employee.Child = cSlider.ToString();
+                    employee.saraly = sSlider.ToString();
 
+                    var id = App.DbHelper.AddEmployee(employee);
+                    await DisplayAlert("บันทึกสำเร็จ", "รหัสพนักงานของท่านคือ " + Id, "ตกลง");
                 }
+                await Navigation.PopModalAsync();
             }
         }
 
