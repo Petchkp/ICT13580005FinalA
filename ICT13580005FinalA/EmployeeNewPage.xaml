@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ICT13580005FinalA.EmployeeNewPage"
+    BackgroundColor="Blue">
+    <ScrollView>
+        <StackLayout
+            Padding="22"
+            Orientation="Vertical"
+            BackgroundColor="Aqua">
+            <Label
+                x:Name="titleLabel"
+                Text="เพิ่มพนักงานใหม่"
+                HorizontalTextAlignment="Center"
+                FontSize="20"
+                TextColor="Blue"
+                FontAttributes="Bold"
+                BackgroundColor="White"
+                Margin="0,20,0,20" />
+            <Label
+                Text="ชื่อ"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Entry
+                Placeholder="ชื่อ"
+                Keyboard="Text"
+                FontSize="14"
+                HorizontalTextAlignment="Center"
+                x:Name="nameEntry" />
+            <Label
+                Text="นามสกุล"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Entry
+                Placeholder="นามสกุล"
+                Keyboard="Text"
+                FontSize="14"
+                HorizontalTextAlignment="Center"
+                x:Name="lastnameEntry" />
+            <Label
+                Text="อายุ"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Entry
+                Placeholder="อายุ"
+                Keyboard="Numeric"
+                FontSize="14"
+                HorizontalTextAlignment="Center"
+                x:Name="ageEntry" />
+            <Label
+                Text="เพศ"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Picker
+                x:Name="genderPicker"
+                Title="กรุณาเลือกเพศ" />
+            <Label
+                Text="แผนก"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Picker
+                x:Name="depaetmentPicker"
+                Title="กรุณาเลือกแผนก" />
+            <Label
+                Text="เบอร์โทรศัพท์"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Entry
+                Placeholder="เบอร์โทรศัพท์"
+                Keyboard="Telephone"
+                FontSize="14"
+                HorizontalTextAlignment="Center"
+                x:Name="phoneEntry" />
+            <Label
+                Text="อีเมล์"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Entry
+                Placeholder="อีเมล์"
+                Keyboard="Email"
+                FontSize="14"
+                HorizontalTextAlignment="Center"
+                x:Name="mailEntry" />
+            <Label
+                Text="ที่อยู่"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Entry
+                Placeholder="ที่อยู่"
+                Keyboard="Text"
+                FontSize="14"
+                HorizontalTextAlignment="Center"
+                x:Name="addressEntry"
+                HeightRequest="100" />
+            <Label
+                Text="สถานะแต่งงาน"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Switch
+                IsToggled="false" />
+            <Label
+                Text="จำนวนบุตร"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Slider
+                Maximum="10"
+                Minimum="0"
+                Value="0"
+                x:Name="cSlider" />
+            <Label
+                x:Name="valueLabelc"/>
+            <Label
+                Text="เงินเดือน"
+                FontSize="14"
+                TextColor="Blue"
+                Margin="0,10,0,0" />
+            <Slider
+                Maximum="200000"
+                Minimum="0"
+                Value="0"
+                x:Name="sSlider" />
+            <Label
+                x:Name="valueLabels"/>
+            <Grid
+                Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button
+                    x:Name="saveButtun"
+                    Text="บันทึก"
+                    TextColor="Green"
+                    FontAttributes="Bold"
+                    BackgroundColor="White"
+                    Grid.Column="0" />
+                <Button
+                    x:Name="cancelButtun"
+                    Text="ยกเลิก"
+                    TextColor="Red"
+                    FontAttributes="Bold"
+                    BackgroundColor="White"
+                    Grid.Column="1" />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
