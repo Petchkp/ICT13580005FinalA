@@ -54,6 +54,7 @@ namespace ICT13580005FinalA
                     employee.gender = genderPicker.SelectedItem.ToString();
                     employee.Departmant = depaetmentPicker.SelectedItem.ToString();
                     employee.Phone = phoneEntry.Text;
+
                 }
             }
         }
